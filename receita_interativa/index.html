@@ -1,11 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receita interativa</title>
+    <link rel="stylesheet" href="css/style.css">
+    
 </head>
 <body>
-    
+
+    <div class="recipe-card">
+        <div class="recipe-title">
+            <h1>Bolo de Chocolate</h1>
+            <img src="img/chocolate-cake.png" alt="chocolate-cake">
+            <p class="recipe-info"><strong> Tempo de confecção: </strong> 45min</p>
+            <p class="recipe-info"><strong> Porções: </strong> 10</p>
+            <p class="recipe-info"><strong> Categoria: </strong> Sobremesa</p>
+
+            <button onclick="mostrarIngredientes()">Ver Ingredientes</button>
+            <button onclick="mostrarInstrucoes()">Ver Instruções</button>
+
+        </div>
+
+        <div id="ingredientes" class="hidden">
+            <h2>Ingredientes</h2>
+            <ul>
+                <li>3 ovos;</li>
+                <li>1 chavena de açúcar;</li>
+                <li>manteiga</li>
+                <li>2 chavena de farinha de trigo;</li>
+                <li>1 chavena de leite</li>
+                <li>1 chavena de de cacau em pó</li>
+                <li>1 colher de fermento</li>
+            </ul>
+        </div>
+
+        <div id="instrucoes" class="hidden">
+            <h2>Instruções</h2>
+            <ol>
+                <li>Em um liquidificador adicione os ovos, açúcar,  a manteiga, a farinha de trigo, leite depois bata por 5 minutos.</li>
+                <li>Adicione o fermento e misture com uma espátula delicadamente.</li>
+                <li>Em uma forma untada, despeje a massa e asse em forno médio (180 ºC) preaquecido por cerca de 40 minutos. Não se esqueça de usar uma forma alta para essa receita: como leva duas colheres de fermento, ela cresce bastante! Outra solução pode ser colocar apenas uma colher de fermento e manter a sua receita em uma forma pequena.</li>
+                <li>Em uma panela, aqueça a manteiga e misture o chocolate em pó até que esteja homogêneo.</li>
+                <li>Acrescente o creme de leite e misture bem até obter uma consistência cremosa.</li>
+                <li>Desligue o fogo e acrescente o açúcar.</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

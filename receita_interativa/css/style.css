@@ -1,0 +1,83 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.recipe-card{
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 10px;
+    max-width: 550px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-title{
+    color: #333;
+}
+
+.recipe-title img{
+    border-radius: 20px;
+    width: 100%;
+}
+
+.recipe-info{
+    margin: 5px 0;
+    font-size: 17px;
+}
+
+button{
+    cursor: pointer;
+    width: 50%;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+button:hover{
+    background-color: #ff6600;
+}
+
+#ingredientes, #instrucoes {
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; 
+}
+
+#ingredientes h2, #instrucoes h2 {
+    color: #e67e22; 
+    font-size: 25px;
+}
+
+#ingredientes ul, #instrucoes ol {
+    line-height: 1.6; 
+}
+
+#ingredientes ul li, #instrucoes ol li{
+   text-align: justify;
+   font-size: 17px;
+}
+
+.hidden{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease-out, height 0.3s ease-out;
+}
+
+.hidden:not(.hidden) {
+    opacity: 1;
+    height: auto;
+}
+
+h2{
+    color: #ff6600;
+}
