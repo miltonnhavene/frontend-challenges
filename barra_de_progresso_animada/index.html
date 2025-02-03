@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra de Progresso</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <span id="progress-text">0%</span>
+    </div>
+
+    <label for="start-value">Valor Inicial:</label>
+    <input type="number" id="start-value" min="0" max="100" value="0">
+    
+    <label for="end-value">Valor Final:</label>
+    <input type="number" id="end-value" min="0" max="100" value="100">
+    
+    <button onclick="startProgress()">Iniciar Progresso</button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
