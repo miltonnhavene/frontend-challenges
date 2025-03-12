@@ -1,2 +1,2 @@
 # frontend-challenges
-Repositório para armazenar meus desafios de frontend do ONIT
+Repositório para armazenar meus desafios de frontend
